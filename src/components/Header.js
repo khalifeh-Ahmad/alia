@@ -1,15 +1,18 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className="hide-when-mobile">
-        <h1>Web Development Tutorial</h1>
+        <Link style={{ padding: "20px" }} to="/">
+          Web Development Tutorial
+        </Link>
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/html">
+            <NavLink className="main-link" to="/html">
               HTML
-            </a>
+            </NavLink>
             <ul className="sub-ul">
               <li>
                 <a href="www">Full Course</a>
@@ -23,9 +26,9 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/css">
+            <NavLink className="main-link" to="/css">
               CSS
-            </a>
+            </NavLink>
             <ul className="sub-ul">
               <li>
                 <a href="www">Full Course</a>
@@ -50,9 +53,9 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/javascript">
+            <NavLink className="main-NavLink" to="/javascript">
               JavaScript
-            </a>
+            </NavLink>
             <ul className="sub-ul sub-of-js">
               <li>
                 <a href="www">coming soon🔥</a>
