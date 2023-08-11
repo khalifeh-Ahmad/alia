@@ -1,12 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
 const Javascript = () => {
   return (
     <>
-      <Header></Header>
-      <main>JAVASCRIPT PAGE</main>
-      <Footer></Footer>
+      <Header />
+      <Main content="JAVASCRIPT" />
+      <Footer />
     </>
   );
 };
